@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+    document.write("<h1>Arrays: 1.Optellen<br></h1>");
+
+    var numbers = [1, 2, 3, 3, 4, 5, 6, 7, 8, 9];
+    var sum = numbers.reduce(myFunction);
+    function myFunction(a, b) {
+      return a + b;
+    }
+      console.log("The sum is " + sum);
+
+      /*  alternatief
+      document.write("<hr><h1>Oefeningen arrays</h1><h2>Oefening: Optellen</h2>");
+let arrayInts = [1, 2, 3, 3, 4, 5, 6, 7, 8, 9];
+let som = 0;
+document.write("array = [1, 2, 3, 3, 4, 5, 6, 7, 8, 9]<br>");
+for (var i = 0; i < arrayInts.length; i++) {
+som += arrayInts[i];
+}
+document.write("Dit is de som = "+som+" van een reeks getallen in de array.");
+          */
+
+    document.write("<h1>Arrays: 2.De beste keuze<br></h1>");
+
+      let acteur = ["sylvester", "stallone", "arnold"];
+      for (let i = 0; i < acteur.length; i++) {
+      console.log("Nummer " + i + " is " + acteur[i]);
+      }
+
+    document.write("<h1>Arrays: 3.Klonen<br></h1>");
+
+    let acteurr = ["Mario", "Luigi", "Peach"];
+    acteurr.push("Bowser");
+    for (let i = 0; i < acteurr.length; i++) {
+    console.log(acteurr[i]);
+    }
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+    document.write("<h1>Oefening1: Talen<br></h1>");
+
+    let fr = "frans";
+    let nl = "nederlands";
+    let en = "engels";
+
+    let bericht = prompt("tijp bericht");
+
+    if(bericht === "Bonjour tout le monde") {
+      console.log("taal is " + fr);
+    } else if(bericht === "Hallo iedereen"){
+      console.log("taal is " + nl);
+    } else if(bericht === "Hallo wereld") {
+      console.log("taal is " + en);
+    }
+
+  document.write("<h1>Oefening2: Scores weergeven<br></h1>");
+  let score = prompt("tijp score");
+
+  if(score <= 50) {
+    console.log("rang is C ");
+  } else if(score > 50 && score <= 90){
+    console.log("rang is B");
+  } else {
+    console.log("rang is A");
+  }
+
+  document.write("<h1>Oefening3: In het meervoudn<br></h1>");
+  let enk = prompt("tijp enkelvoud");
+  let getal = prompt("tijp getal");
+
+  if (getal > 1) {
+  console.log("ik heb " + getal + " " + enk + "s");
+    }
+  else {
+    console.log("ik heb " + getal + " " + enk);
+  }
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+</head>
+<body>
+    <script>
+    document.write("<h1>Math object: 1.Max & Min<br></h1>");
+
+    console.log(Math.min(7, 5, -12, 6, 32, 18, 14, -2));
+    console.log(Math.max(-3, 9, 21, 36, 27, 54, 17, 35));
+    let a = Math.min(7, 5, -12, 6, 32, 18, 14, -2);
+    let b = Math.max(-3, 9, 21, 36, 27, 54, 17, 35)
+    function sum(a, b) {
+      return a + b;
+    }
+    console.log(sum(a, b));
+
+    document.write("<h1>Math object: 2.Willekeurig 1<br></h1>");
+
+    let floatSpeed = 10.4;
+    let lowSpeed = Math.floor(floatSpeed);
+    console.log(lowSpeed);
+
+    let highSpeed = Math.ceil(floatSpeed);
+    console.log(highSpeed);
+
+    document.write("<h1>Math object: 3.Willekeurig 2<br></h1>");
+
+    var x = Math.floor((Math.random() * 10) + 50);
+    console.log(x); //alles tussen 50 en 60
+
+    var x = Math.floor((Math.random() * (100 - 50)) + 50);
+    console.log(x);
+
+    var x = Math.random();
+    console.log(x);
+
+    var x = Math.floor((Math.random() * (11 - 0)) + 0);
+    console.log(x);
+
+    document.write("<h1>Math object: 4.Willekeurig 3<br></h1>");
+
+    let items = ["Goro", "Johnny Cago", "Kano", "Liu Kano", "Raiden", "Raptile", "Scorpion", "Shang Tsun", "Sonya", "Sub-Zero"];
+    function random_item(items)
+    {
+    return items[Math.floor(Math.random()*items.length)];
+    }
+    console.log(random_item(items));
+
+
+
+    </script>
+
+
+
+</body>
+</html>
